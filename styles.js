@@ -1,3 +1,4 @@
+//import React from 'react';
 import { StyleSheet, Platform, StatusBar} from 'react-native';
 
 export default StyleSheet.create({
@@ -13,40 +14,68 @@ export default StyleSheet.create({
       android: { paddingTop: StatusBar.currentHeight }
     })
   },
-
   box: {
-    height: 100,
-    width: 100,
+    height: 80,
+    width: 60,
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 1,
+    margin: 5,
+    borderStyle: "solid",
+    borderColor: "darkslategray",
+    backgroundColor: "lightgray"
+  },
+  boxText: {
+    fontSize: 20,
+    color: "darkslategray",
+    fontWeight: "bold"
+  },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    margin: 5
+  },
+  column: {
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    margin: 5
+  },
+  firstbox: {
+    flex:2,
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 1,
     borderStyle: "solid",
     borderColor: "darkslategray",
-    backgroundColor: "lightgray"
+    backgroundColor: "lightgray",
+    margin: 20, 
+    padding: 5
   },
-
-  boxText: {
+  secondbox: {
+    flex:1,
+    flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
-    color: "darkslategray",
+    alignItems: "flex-start",
     borderWidth: 1,
     borderStyle: "solid",
-    fontWeight: "bold"
+    borderColor: "darkslategray",
+    backgroundColor: "lightgray",
+    margin: 20, 
+    padding: 5
   },
-
-  row: {
-    flex: 1,
-    flexDirection: "row",
-    alignItems: "flex-end| left ",
-    justifyContent: "space-around",
-    alignSelf: "stretch"
-  },
-
-  column: {
-    flex: 1,
+  mainbox: {
+    flex:1,
     flexDirection: "column",
-    alignItems: "flex-start| left",
-    justifyContent: "space-around",
-    alignSelf: "stretch"
-  }
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    borderWidth: 1,
+    borderStyle: "solid",
+    borderColor: "darkslategray",
+    backgroundColor: "lightgray",
+    margin: 20, 
+    padding: 5
+  },
 });

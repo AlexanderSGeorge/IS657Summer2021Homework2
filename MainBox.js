@@ -3,14 +3,14 @@ import { PropTypes } from "prop-types";
 import { View, Text } from "react-native";
 import styles from "./styles";
 
-export default function boxtext({ children }) {
+export default function MainBox({ children }) {
   return (
-    <View style={styles.boxtext}>
-      <Text style={styles.boxtextText}>{children}</Text>
+    <View style={styles.MainBox}>
+      <Text style={styles.boxText}>{children}</Text>
     </View>
   );
 }
 
-boxtext.propTypes = {
+MainBox.propTypes = {
   children: PropTypes.node.isRequired
 };
